@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Traveller } = require('../../models');
+const { Traveller, Trip } = require('../../models');
 
 // READ all travellers
 // endpoint '/api/travellers'
