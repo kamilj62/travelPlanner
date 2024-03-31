@@ -47,6 +47,7 @@ router.delete('/:id', async (req, res) => {
     if (!locationData) {
       res.status(404).json({ msg: 'No location found with this id' });
     }
+    res.status(200).json(locationData);
   } catch (err) {
     res.status(500).json(err);
   }
